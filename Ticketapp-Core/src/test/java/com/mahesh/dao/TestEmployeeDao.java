@@ -29,13 +29,13 @@ public class TestEmployeeDao {
 		employee.setId(5);
 		employeeDao.update(employee);
 		*/
-		employeeDao.delete(5);
+		//employeeDao.delete(5);
 		
 		List<Employee> list = employeeDao.list();
 		Iterator<Employee> i = list.iterator();
 		while (i.hasNext()) {
 			Employee employees=(Employee) i.next();
-			System.out.println(employees.getId()+"\t"+employees.getName()+"\t"+employees.getDepartmentId().getId()+"\t"+employees.getEmailId()+"\t"+employees.getPassword()
+			System.out.println(employees.getId()+"\t"+employees.getName()+"\t"+employees.getDepartmentId().getId()+"\t"+employees.getRoleId().getId()+"\t"+employees.getEmailId()+"\t"+employees.getPassword()
 			+"\t"+employees.getMobileNumber()+"\t"+employees.getActive());
 		}
 
