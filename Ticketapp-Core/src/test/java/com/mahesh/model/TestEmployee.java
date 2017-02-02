@@ -10,6 +10,9 @@ public class TestEmployee {
 		Department department=new Department();
 		department.setId(1);
 		employee.setDepartmentId(department);
+		Role role=new Role();
+		role.setId(1);
+		employee.setRoleId(role);
 		employee.setEmailId("mahesh@gmail.com");
 		employee.setPassword("rajesh");
 		employee.setMobileNumber(852682870);
